@@ -1,0 +1,19 @@
+uuid: 20c67713-ef9a-4397-89fe-1b8c54aa0311
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song_file
+    - node.type.album
+id: node.album.field_song_file
+field_name: field_song_file
+entity_type: node
+bundle: album
+label: 'Song File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
