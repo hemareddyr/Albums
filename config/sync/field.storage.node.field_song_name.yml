@@ -1,0 +1,21 @@
+uuid: 5a32f5cf-431c-4f53-905f-fc21fdbfd0bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_song_name
+field_name: field_song_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
