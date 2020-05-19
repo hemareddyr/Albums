@@ -1,0 +1,41 @@
+uuid: 72110078-21e1-4a9e-a55e-44a7f9fc7c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.song.field_author
+    - field.field.paragraph.song.field_file
+    - field.field.paragraph.song.field_name
+    - paragraphs.paragraphs_type.song
+  module:
+    - file
+id: paragraph.song.default
+targetEntityType: paragraph
+bundle: song
+mode: default
+content:
+  field_author:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_file:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_name:
+    weight: 3
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

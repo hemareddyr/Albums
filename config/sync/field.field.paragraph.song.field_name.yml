@@ -1,0 +1,27 @@
+uuid: ab4c6743-4fd2-4b2b-8140-a8bbb731fcba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.song
+  module:
+    - file
+id: paragraph.song.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: song
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp3
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

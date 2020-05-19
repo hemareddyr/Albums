@@ -1,0 +1,26 @@
+uuid: a3e9fe68-b9e5-4d3f-8502-d5c39c7050c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_author
+    - paragraphs.paragraphs_type.song
+    - user.role.songs
+id: paragraph.song.field_author
+field_name: field_author
+entity_type: paragraph
+bundle: song
+label: Author
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 8e9773c5-c5a0-4f19-991e-959c4f89c6b1
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

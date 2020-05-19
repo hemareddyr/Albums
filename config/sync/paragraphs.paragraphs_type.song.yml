@@ -1,0 +1,10 @@
+uuid: 186ed57b-24b3-42a1-94a5-971b4a704314
+langcode: en
+status: true
+dependencies: {  }
+id: song
+label: Song
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

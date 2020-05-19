@@ -1,0 +1,25 @@
+uuid: 8565d9bf-54f1-4322-ae0c-e013d9f9909d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song
+    - node.type.album
+  module:
+    - entity_reference_revisions
+id: node.album.field_song
+field_name: field_song
+entity_type: node
+bundle: album
+label: Songs
+description: ''
+required: 0
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles: null
+field_type: entity_reference_revisions

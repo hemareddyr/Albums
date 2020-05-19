@@ -1,0 +1,9 @@
+uuid: 8e9773c5-c5a0-4f19-991e-959c4f89c6b1
+langcode: en
+status: true
+dependencies: {  }
+id: songs
+label: songs
+weight: 3
+is_admin: null
+permissions: {  }

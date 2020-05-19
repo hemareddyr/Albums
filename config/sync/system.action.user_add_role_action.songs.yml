@@ -1,0 +1,14 @@
+uuid: 19252f58-1738-4987-8ba7-8e4b47ae2945
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.songs
+  module:
+    - user
+id: user_add_role_action.songs
+label: 'Add the songs role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: songs

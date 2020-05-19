@@ -1,0 +1,14 @@
+uuid: cfba9b98-c9ea-4e28-bfd0-06b04c13f80f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.songs
+  module:
+    - user
+id: user_remove_role_action.songs
+label: 'Remove the songs role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: songs

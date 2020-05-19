@@ -3,67 +3,41 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.album.body
-    - field.field.node.album.field_album_published_data
-    - field.field.node.album.field_song_file
-    - field.field.node.album.field_song_name
-    - field.field.node.album.field_songs
+    - field.field.node.album.field_album_published_date
+    - field.field.node.album.field_song
     - node.type.album
   module:
+    - datetime
+    - paragraphs
     - path
-    - text
 id: node.album.default
 targetEntityType: node
 bundle: album
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_album_published_data:
-    weight: 123
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_song_file:
-    weight: 125
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_song_name:
-    weight: 124
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_songs:
+  field_album_published_date:
     weight: 122
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: datetime_default
+    region: content
+  field_song:
+    type: entity_reference_paragraphs
+    weight: 121
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   path:
     type: path
